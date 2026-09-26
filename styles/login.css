@@ -1,0 +1,119 @@
+
+body {
+    background-color: #8B2E2E;
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+/* Khung đăng nhập */
+.login-box {
+    width: 400px;
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Tên shop */
+.login-box h1 {
+    text-align: center;
+
+    color: #9E2A2B;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+
+/* Lời chào */
+.welcome {
+    text-align: center;
+
+    color: #777;
+
+    margin-bottom: 30px;
+}
+
+
+/* Tên Username và Password */
+.form-label {
+    color: #8B2E2E;
+
+    font-weight: bold;
+}
+
+
+/* Ô nhập */
+.form-control {
+    border: 2px solid #D98C8C;
+}
+
+
+/* Khi bấm vào ô nhập */
+.form-control:focus {
+    border-color: #B22222;
+
+    box-shadow: 0 0 5px rgba(178, 34, 34, 0.3);
+}
+
+
+/* Nút đăng nhập */
+.btn-login {
+    background-color: #9E2A2B;
+
+    color: white;
+
+    font-weight: bold;
+
+    padding: 10px;
+
+    border-radius: 8px;
+}
+
+
+/* Khi đưa chuột vào nút */
+.btn-login:hover {
+    background-color: #E63946;
+
+    color: white;
+}
+
+
+/* Dòng đăng ký */
+.register {
+    text-align: center;
+
+    margin-top: 20px;
+
+    margin-bottom: 0;
+}
+
+
+/* Link đăng ký */
+.register a {
+    color: #9E2A2B;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+
+/* Khi đưa chuột vào đăng ký */
+.register a:hover {
+    color: #E63946;
+
+    text-decoration: underline;
+}
