@@ -1,0 +1,326 @@
+
+/* ================= CÀI ĐẶT CHUNG ================= */
+body {
+  background: rgb(174, 9, 9);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+}
+
+.navbar-logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.brand-name {
+  color: rgb(174, 9, 9);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.search-form {
+  max-width: 350px;
+}
+
+.btn-search {
+  background: rgb(174, 9, 9);
+  color: white;
+}
+
+.btn-search:hover {
+  background: #870000;
+  color: white;
+}
+
+/* Khu vực đăng nhập và thông tin người dùng */
+.user-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.user-name {
+  color: #333;
+  font-weight: bold;
+}
+
+.btn-login,
+.btn-logout {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-login {
+  background: rgb(174, 9, 9);
+  color: white;
+}
+
+.btn-login:hover {
+  background: #870000;
+  color: white;
+}
+
+.btn-logout {
+  border: 1px solid rgb(174, 9, 9);
+  color: rgb(174, 9, 9);
+  background: white;
+  cursor: pointer;
+}
+
+.btn-logout:hover {
+  background: #ffdada;
+}
+
+/* ================= LỜI CHÀO ================= */
+.welcome {
+  padding: 35px 20px;
+  text-align: center;
+  color: white;
+}
+
+.welcome h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.welcome p {
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+/* ================= BỐ CỤC CHÍNH ================= */
+.hero {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 0 20px 20px;
+  min-height: 100vh;
+}
+
+/* Menu danh mục bên trái */
+.category-menu {
+  width: 190px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 85px;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.category-title {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.nav-pills .nav-link {
+  width: 100%;
+  color: #333;
+  font-weight: 600;
+  text-align: left;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+}
+
+.nav-pills .nav-link:hover {
+  background: #ffdada;
+  color: rgb(174, 9, 9);
+}
+
+.nav-pills .nav-link.active {
+  background: rgb(174, 9, 9);
+  color: white;
+}
+
+/* Khu vực nội dung bên phải */
+.product-content {
+  flex: 1;
+  min-width: 0;
+  padding: 20px;
+  background: #fff7f7;
+  border-radius: 12px;
+}
+
+.section-title {
+  color: rgb(174, 9, 9);
+  font-size: 27px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+/* ================= THẺ SẢN PHẨM ================= */
+.product-card {
+  height: 100%;
+  background: white;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.product-img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  padding: 15px;
+  transition: 0.3s;
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.04);
+}
+
+.product-card .card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card .card-title {
+  color: #222;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.product-card .card-text {
+  color: #666;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.product-price {
+  color: rgb(174, 9, 9);
+  font-size: 23px;
+  font-weight: bold;
+  margin: 10px 0 15px;
+}
+
+.btn-buy {
+  display: block;
+  width: 100%;
+  margin-top: auto;
+  padding: 11px;
+  border: none;
+  border-radius: 8px;
+  background: rgb(174, 9, 9);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-buy:hover {
+  background: #870000;
+  color: white;
+}
+
+/* Thông báo khi không tìm thấy sản phẩm */
+.no-products {
+  color: #666;
+  padding: 20px 0;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  background: #770000;
+  color: white;
+}
+
+.footer-logo {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.footer-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.footer-text {
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: justify;
+  margin: 0;
+}
+
+.footer-copy {
+  font-size: 14px;
+  color: #f2f2f2;
+}
+
+/* ================= MÀN HÌNH NHỎ ================= */
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .category-menu {
+    width: 100%;
+    position: static;
+  }
+
+  /* Menu danh mục hiển thị thành nhiều cột */
+  #categoryTabs {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 5px;
+  }
+
+  .nav-pills .nav-link {
+    margin-bottom: 0;
+  }
+
+  .product-content {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .search-form {
+    max-width: none;
+  }
+
+  .user-area {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 576px) {
+  .welcome h1 {
+    font-size: 24px;
+  }
+
+  .product-img {
+    height: 190px;
+  }
+
+  .product-price {
+    font-size: 21px;
+  }
+
+  .footer-logo {
+    margin-bottom: 20px;
+  }
+}

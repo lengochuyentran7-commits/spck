@@ -1,0 +1,289 @@
+
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>TECHGEAR - Cửa hàng công nghệ</title>
+
+  <!-- Bootstrap giúp bố cục đẹp trên máy tính và điện thoại -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- File CSS riêng của website -->
+  <link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body>
+  <!-- ================= HEADER / NAVBAR ================= -->
+  <nav class="navbar navbar-expand-lg bg-light sticky-top">
+    <div class="container-fluid">
+
+      <!-- Logo -->
+      <a class="navbar-brand" href="index.html">
+        <img
+          src="./img/ChatGPT Image 19_56_39 20 thg 6, 2026.png"
+          alt="TECHGEAR"
+          class="navbar-logo"
+        >
+        <span class="brand-name">TECHGEAR</span>
+      </a>
+
+      <!-- Nút menu trên màn hình nhỏ -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar"
+        aria-expanded="false"
+        aria-label="Mở menu"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+
+        <!-- Menu bên trái -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              data-bs-toggle="dropdown"
+            >
+              Cơ sở
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">TP. Hồ Chí Minh</a></li>
+              <li><a class="dropdown-item" href="#">Hà Nội</a></li>
+              <li><a class="dropdown-item" href="#">Hải Phòng</a></li>
+              <li><a class="dropdown-item" href="#">Đà Nẵng</a></li>
+              <li><a class="dropdown-item" href="#">Cần Thơ</a></li>
+              <li><a class="dropdown-item" href="#">An Giang</a></li>
+              <li><a class="dropdown-item" href="#">Cà Mau</a></li>
+              <li><a class="dropdown-item" href="#">Đắk Lắk</a></li>
+              <li><a class="dropdown-item" href="#">Lâm Đồng</a></li>
+              <li><a class="dropdown-item" href="#">Phú Thọ</a></li>
+              <li><a class="dropdown-item" href="#">Quảng Ngãi</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- Ô tìm kiếm sản phẩm -->
+        <form class="d-flex search-form" id="searchForm" role="search">
+          <input
+            class="form-control me-2"
+            id="searchInput"
+            type="search"
+            placeholder="Tìm sản phẩm..."
+            aria-label="Tìm sản phẩm"
+          >
+          <button class="btn btn-search" type="submit">Tìm</button>
+        </form>
+
+        <!-- JavaScript sẽ tự cập nhật khu vực này -->
+        <div class="user-area ms-lg-3 mt-3 mt-lg-0" id="userArea">
+          <!-- Chưa đăng nhập: hiện nút Đăng nhập -->
+          <!-- Đã đăng nhập: hiện tên người dùng và nút Đăng xuất -->
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= LỜI CHÀO ================= -->
+  <section class="welcome container-fluid">
+    <h1>Chào mừng đến với TECHGEAR!</h1>
+    <p>Khám phá các sản phẩm công nghệ dành cho bạn.</p>
+  </section>
+
+  <!-- ================= DANH MỤC VÀ SẢN PHẨM ================= -->
+  <main class="hero">
+
+    <!-- Menu danh mục bên trái -->
+    <aside class="category-menu">
+      <h5 class="category-title">Danh mục sản phẩm</h5>
+
+      <div
+        class="nav flex-column nav-pills"
+        id="categoryTabs"
+        role="tablist"
+        aria-orientation="vertical"
+      >
+        <button
+          class="nav-link active"
+          id="laptop-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#laptop"
+          type="button"
+          role="tab"
+        >Laptop</button>
+
+        <button
+          class="nav-link"
+          id="phone-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#phone"
+          type="button"
+          role="tab"
+        >Điện thoại</button>
+
+        <button
+          class="nav-link"
+          id="headphone-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#headphone"
+          type="button"
+          role="tab"
+        >Tai nghe</button>
+
+        <button
+          class="nav-link"
+          id="pc-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#pc"
+          type="button"
+          role="tab"
+        >PC</button>
+
+        <button
+          class="nav-link"
+          id="tablet-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#tablet"
+          type="button"
+          role="tab"
+        >iPad, Tablet</button>
+
+        <button
+          class="nav-link"
+          id="accessory-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#accessory"
+          type="button"
+          role="tab"
+        >Phụ kiện</button>
+      </div>
+    </aside>
+
+    <!-- Khu vực hiển thị sản phẩm -->
+    <section class="tab-content product-content" id="categoryContent">
+
+      <!-- Mỗi danh mục có một khu vực trống.
+           JavaScript sẽ tự thêm thẻ sản phẩm vào đây. -->
+
+      <div
+        class="tab-pane fade show active"
+        id="laptop"
+        role="tabpanel"
+        aria-labelledby="laptop-tab"
+        tabindex="0"
+      >
+        <h2 class="section-title">Laptop</h2>
+        <div class="row g-4 product-list" id="laptopList"></div>
+      </div>
+
+      <div
+        class="tab-pane fade"
+        id="phone"
+        role="tabpanel"
+        aria-labelledby="phone-tab"
+        tabindex="0"
+      >
+        <h2 class="section-title">Điện thoại</h2>
+        <div class="row g-4 product-list" id="phoneList"></div>
+      </div>
+
+      <div
+        class="tab-pane fade"
+        id="headphone"
+        role="tabpanel"
+        aria-labelledby="headphone-tab"
+        tabindex="0"
+      >
+        <h2 class="section-title">Tai nghe</h2>
+        <div class="row g-4 product-list" id="headphoneList"></div>
+      </div>
+
+      <div
+        class="tab-pane fade"
+        id="pc"
+        role="tabpanel"
+        aria-labelledby="pc-tab"
+        tabindex="0"
+      >
+        <h2 class="section-title">PC</h2>
+        <div class="row g-4 product-list" id="pcList"></div>
+      </div>
+
+      <div
+        class="tab-pane fade"
+        id="tablet"
+        role="tabpanel"
+        aria-labelledby="tablet-tab"
+        tabindex="0"
+      >
+        <h2 class="section-title">iPad, Tablet</h2>
+        <div class="row g-4 product-list" id="tabletList"></div>
+      </div>
+
+      <div
+        class="tab-pane fade"
+        id="accessory"
+        role="tabpanel"
+        aria-labelledby="accessory-tab"
+        tabindex="0"
+      >
+        <h2 class="section-title">Phụ kiện</h2>
+        <div class="row g-4 product-list" id="accessoryList"></div>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer mt-5">
+    <div class="container py-4">
+      <div class="row align-items-center">
+
+        <div class="col-md-3 text-center text-md-start">
+          <img
+            src="./img/ChatGPT Image 19_56_39 20 thg 6, 2026.png"
+            alt="Logo TECHGEAR"
+            class="footer-logo"
+          >
+        </div>
+
+        <div class="col-md-9">
+          <h4 class="footer-title">TECHGEAR</h4>
+          <p class="footer-text">
+            TECHGEAR cung cấp các sản phẩm công nghệ như laptop,
+            điện thoại, PC Gaming, tablet, tai nghe và phụ kiện.
+            Chúng tôi mong muốn mang đến sản phẩm phù hợp với nhu cầu
+            học tập, làm việc và giải trí của khách hàng.
+          </p>
+        </div>
+
+      </div>
+
+      <hr>
+      <p class="text-center footer-copy mb-0">
+        © 2026 TECHGEAR. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JavaScript để sử dụng dropdown và tab -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+  ></script>
+
+  <!-- File JavaScript xử lý dữ liệu và thông tin người dùng -->
+  <script src="./spck.js"></script>
+</body>
+</html>
