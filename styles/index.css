@@ -324,3 +324,32 @@ body {
     margin-bottom: 20px;
   }
 }
+
+/* Nút xem chi tiết sản phẩm */
+.btn-detail {
+    background: rgb(174, 9, 9);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.btn-detail:hover {
+    background: #870000;
+    color: white;
+}
+
+/* Giới hạn độ dài mô tả sản phẩm */
+.product-description {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+
+    /* Chỉ hiển thị tối đa 3 dòng */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+}
